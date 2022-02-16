@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="es">
+  <head>  
+    <!-- ========= -->
+    <!-- meta tags -->
+    <!-- ========= -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="cartuchos compatibles, impresora compatible, tabla de compatiblidad, compatibilidad de insumos">
+    <meta name="author" content="Marcelo Leiva" >
+    <meta name="copyright" content="Milenio3">
+
+    <!-- ============= -->
+    <!-- Bootstrap CSS -->
+    <!-- ============= -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- =============== -->
+    <!-- Bootstrap Icons -->
+    <!-- =============== -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
+    <!-- =========== -->
+    <!-- Brand Icons -->
+    <!-- =========== no los pude usar por no haber íconos de las marcas requeridas
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet"> -->    
+    
+    <link rel="stylesheet" href="./css/estilo.css">
+
+    <link rel="icon" type="image/png" href="./img/favicon.ico"/>
+    
+    <title>::Patior</title>
+  </head>
+  <body>
+    <!-- ========== -->
+    <!-- ENCABEZADO -->
+    <!-- ========== -->
+
+    <header class="container-fluid bg-primary d-flex justify-content-center">
+        <h3 class="text-light fs-4 mt-2" id="typewriter"></h3>
+    </header>
+
+
+    <!-- ============================= -->
+    <!--     BARRA DE NAVEGACIÓN       -->
+    <!-- ============================= -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light p-3" id="menu">
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="index.html">
+                <img src="./img/patior-logo.png" alt="Patior" width="120">
+                <!-- <span class="text-info fs-4 fw-bold">::Patior </span> -->
+              <!-- <span class="text-info fs-4 fwbold"><i class="bi bi-arrow-up-square-fill"></i></span> -->
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#intro">Marcas</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Somos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#equipo">Equipo</a></li>
+
+                        <li><hr class="dropdown-divider"></li>
+
+                        <li><a class="dropdown-item" href="#local">Ubicación</a></li>
+
+                        <!-- <li><hr class="dropdown-divider"></li>
+
+                        <li><a class="dropdown-item" href="#">Blog</a></li> -->
+
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#seccion-contacto">Contacto</a>
+                    
+                    </li>
+
+                    <li class="ms-5">
+                        <a href="./ingreso.html" class="d-flex">
+                            <button class="text-light btn btn-primary btn-info-outline-success w-100 fs-7" type="button">Ingreso</button>
+                        </a>
+                    </li>
+                    
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- ============================= -->
+    <!--       SLIDER DE IMAGENES      -->
+    <!-- ============================= -->
+
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+          <div class="carousel-item active" data-bs-interval="3000">
+            <img src="./img/slide-c2.jpg" class="d-block w-100" alt="slide1">
+          </div>
+
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="./img/slide-b.jpg" class="d-block w-100" alt="slide2">
+          </div>
+          
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="./img/slide-a.jpg" class="d-block w-100" alt="slide3">
+          </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+
+    </div>
+
+    <!-- ============================= -->
+    <!--       INTROD SOMOS            -->
+    <!-- ============================= -->
+
+    <section class="w-50 mx-auto text-center pt-5" >
+        <h1 class="p-3 fs-2 border-top border-3">Toda la compatibilidad de insumos de impresión en una sola<span class="text-info"> Plataforma de Servicio</span></h1>
+        <p class="p-3 fs-4 text-secondary" id="intro"><span class="text-info fs-3">Somos</span> un grupo de desarrolladores que tiene por objetivo ayudarte a encontrar los Insumos Compatibles de tus Equipos de Impresión.</p>
+    </section>
+
+    <!-- ============================= -->
+    <!--            TARJETAS           -->
+    <!-- ============================= -->
+    
+    <main class="bigbox" id="marcas" >
+        
+        <img src="./img/patior-logo-grande.png" alt="PATIOR" class="mx-auto d-block mt-5" width="425">
+        <h1 class="text-center text-info">SOMOS COMPATIBLES</h1>
+
+        <div class="container__box">
+            <div class="box">
+                    <img src="./img/insumos/hp-logo-1.png" alt="HP" width="75px">
+                    <a href="https://www.hp.com/ar-es/home.html" target="_new"><h5>HP</h5></a>
+            </div>
+
+            <div class="box">
+                <img src="./img/insumos/epson-logo-1-1.png" alt="EPSON" width="75">
+                <a href="https://epson.com.ar/" target="_new"><h5>EPSON</h5></a>
+            </div>
+
+            <div class="box">
+                <img src="./img/insumos/Brother_logo.png" alt="BROTHER" width="75">
+                <!-- <i class="lni lni-bootstrap"></i> -->
+                <a href="https://www.brother.com.ar/" target="_new"><h5>BROTHER</h5></a>
+            </div>
+
+            <div class="box">
+                <img src="./img/insumos/lexmark-logo.png" alt="LEXMARK" width="75">
+                <!-- <i class="lni lni-laravel"></i> -->
+                <a href="https://www.lexmark.com/es_ar.html" target="_new"><h5>LEXMARK</h5></a>
+            </div>
+
+            <div class="box">
+                <img src="./img/insumos/samgung-logo.png" alt="SAMSUNG" width="75">
+                <!-- <i class="lni lni-slack"></i> -->
+                <a href="https://www.hp.com/ar-es/cartridge/samsung/toner.html#:~:text=en%20productos%20nuevos-,Reciclaje,-gratuito%20de%20cartuchos" target="_new"><h5>SAMSUNG</h5></a>
+            </div>
+
+            <div class="box">
+                <img src="./img/insumos/canon-logo.png" alt="CANON" width="75">
+                <!-- <i class="lni lni-creative-commons"></i> -->
+                <a href="https://www.canonargentina.com.ar/" target="_new"><h5>CANON</h5></a>
+            </div>
+
+            <div class="box">
+                <img src="./img/insumos/xerox-logo.png" alt="XEROX" width="75">
+                <!-- <i class="lni lni-xbox"></i> -->
+                <a href="https://www.xerox.com/es-ar" target="_new"><h5>XEROX</h5></a>
+            </div>
+
+            <div class="box">
+                <img src="./img/insumos/panasonic-logo.png" alt="PANASONIC" width="75">
+                <!-- <i class="lni lni-paypal-original"></i> -->
+                <a href="https://mgfotocopiadoras.com.ar/producto/panasonic-kx-mb-3030/" target="_new"><h5>PANASONIC</h5></a>
+            </div>
+
+            <div class="box">
+                <img src="./img/insumos/hasar-logo.png" alt="HASAR" width="75">
+                <!-- <i class="lni lni-hacker-news"></i> -->
+                <a href="https://grupohasar.com/hasar-argentina/" target="_new"><h5>HASAR</h5></a>
+            </div>
+
+            <div class="box">
+                <img src="./img/insumos/ricoh-logo.png" alt="RICOH" width="75">
+                <!-- <i class="lni lni-trello"></i> -->
+                <a href="https://www.ricoh-americalatina.com/es-ar" target="_new"><h5>RICOH</h5></a>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- ============================= -->
+    <!--       ACERCA DE NOSOTROS      -->
+    <!-- ============================= -->
+
+    <br>
+    <section class="mx-auto d-block w-100 mb-5">
+        <div class="m-auto text-center border-top border-2" id="equipo">
+            <br>
+            <h1 class="fs-2">Equipo pequeño <span class="text-info">resultados Grandes</span></h1>
+            <p class="fs-4 mt-3">Somos un grupo interdisciplinario que intenta aplicar <span class="text-info">lo disruptivo como diferenciador</span>. <br>
+            Nos encanta tomar el <span class="text-info">desafío de la excelencia</span> en la labor cotidiana.</p>
+        </div>
+        <div class="mt-5 text-center">
+            <img class="img-fluid" src="./img/equipo.jpg" alt="equipo">
+        </div>
+    </section>
+    
+    <!-- ================= -->
+    <!-- REGISTRO & LOGING -->
+    <!-- ================= --
+
+    <main class="reglog"> -->
+        <!-- CAJA MADRE 
+        <div class="contenedor__todo"> -->
+            <!--   CAJA DE LOGIN   -->
+            <!-- <div class="caja__trasera">
+                <div class="caja__trasera__login">
+                    <h3>¿Ya tienes una cuenta?</h3>
+                    <p>Inicia sesión</p>
+                    <button id="btn__iniciar-sesion">Iniciar Sesión</button>
+                </div> -->
+                <!--   CAJA DE REGISTRO   -->
+                <!-- <div class="caja__trasera__register">
+                    <h3>¿Aún no tienes una cuenta?</h3>
+                    <p>Regístrate...</p>
+                    <button id="btn__registrarse">Registro</button>
+                </div>
+            </div> -->
+            <!--   FORMULARIOS LOGIN Y REGISTRO   
+            <div class="contenedor__login-register"> -->
+                <!--   LOGIN   --> 
+                <!-- <form action="" class="formulario__login">
+                    <h2>Iniciar Sesión</h2>
+                    <input type="text" placeholder="Correo Electrónico">
+                    <input type="password" placeholder="Contraseña">
+                    <button>Entrar</button>
+
+                </form>
+
+                <div class="formulario__register"> -->
+                    <!--   REGISTRO   --> <!--
+                    <h2>Registrarse</h2>
+                    <input type="text" placeholder="Nombre Completo">
+                    <input type="text" placeholder="Correo Electrónico">
+                    <input type="text" placeholder="Usuario">
+                    <input type="password" placeholder="Contraseña">
+                    <button>Registrarse</button>
+                </div>
+
+            </div>
+
+        </div>
+    </main> ERA UN LÍO PARA UN SOLO JS -->
+
+    <!-- ========= -->
+    <!-- UBICACIÓN -->
+    <!-- ========= -->
+
+    <div id="local" class="border-top border-2">
+        <div class="mapa"></div>
+        <div>
+            <div class="wrapper">
+                <h2>Ubicado en Córdoba (capital)</h2>
+                <p class="fs-5 text-body">Elegimos Córdoba para nuestras oficinas, queremos estar cerca de nuestros clientes. Estamos ubicados en el barrio Alto Alberdi, a 3 minutos del centro. ¡Visítenos para conocer nuestras oficinas!</p>
+                <section class="d-flex" id="datos-local">
+                    <div>
+                        <p class="text-info fs-5">248</p>
+                        <p>Días de Sol</p>
+                    </div>
+                    
+                    <div>
+                        <p class="text-info fs-5">100%</p>
+                        <p>Aprobado</p>
+                    </div>
+                    
+                    <div>
+                        <p class="text-info fs-5">24 °C</p>
+                        <p>Temperatura</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================= -->
+    <!--         FORMULARIO-BG         -->
+    <!-- ============================= -->
+
+    <section id="seccion-contacto" class="border-top border-bottom border-secondary border-2">
+        <div id="bg-contacto">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,64L120,90.7C240,117,480,171,720,165.3C960,160,1200,96,1320,64L1440,32L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path></svg>
+        </div>
+
+        <!-- ============================= -->
+        <!--           FORMULARIO          -->
+        <!-- ============================= -->
+        
+        <div class="container border-top border-secondary border-2" id="contenedor-formulario">
+            <div id="titulo-formulario" class="text-center mb-4">
+                <div><img src="./img/support2.png" alt="contacto" class="img-fluid"></div>
+                <h2>Contacto</h2>
+                <p class="fs-5">Estamos aquí para compartirte una cultura de servicio.</p>
+            </div>
+            <form action="">
+                <div class="mb-3">
+                    <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com" required>
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="nombre" placeholder="Adrián Sánchez" required>
+                </div>
+                <div class="mb-3">
+                    <input type="tel" class="form-control" id="tel" placeholder="ej: 3516484866" required>
+                </div>
+
+                <div class="mb-3">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Escribe tu Mensaje"></textarea>
+                </div>
+                <div class="mb-3">
+                    <button type="button" class="btn btn-primary w-100 fs-5">Enviar Mensaje</button>
+                </div>
+            </form>
+        </div>
+
+    </section>
+
+    <!-- ============================= -->
+    <!--        PIE DE PAGINA          -->
+    <!-- ============================= -->
+
+    <footer class="w100 d-flex align-items-center justify-content-center flex-wrap">
+        <p class="fs-5 px-3 pt-3">Patior $copy; Todos Los Derechos Reservados 2021</p>
+        <div id="iconos">
+            <a href="https://www.facebook.com/CartuchoEnvios" target="_new"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/cartuchoenvios/" target="_new"><i class="bi bi-twitter"></i></a>
+            <a href="https://www.instagram.com/cartuchoenvios/" target="_new"><i class="bi bi-instagram"></i></a>
+        </div>
+    </footer>
+    
+    <!-- ====================================== -->
+    <!--    Bootstrap Bundle with typewriter    -->
+    <!--           & Register JS staff          -->
+    <!-- ====================================== -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
+    <script src="./js/main.js"></script>
+    
+  </body>
+</html>

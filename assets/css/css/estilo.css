@@ -1,0 +1,203 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+body a{
+    text-decoration: none;
+}
+
+/* === MENU ===*/
+#menu li > a {
+    font-size: 18px;
+    font-weight: bold;
+    color: #3f3f3f;
+}
+
+#menu form > button {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#menu input::placeholder {
+    color: #cfcfcf;
+}
+
+
+/* === SLIDER DE IMAGENES === */
+
+.carousel-inner {
+    max-height: 39rem;
+}
+
+/* === SECCION MARCAS === */
+
+.bigbox {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.bigbox div{
+
+    background: #f3f3f3;
+}
+
+.container__box{
+    max-width:1100px;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+
+    width: 218px;
+    height: 200px;
+    background: #fff !important;
+    margin: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+
+}
+
+.box h5{
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #777777;
+}
+
+/* ==== SECCION MAPA === */
+
+.mapa {
+    background: url(../img/mapa.png);
+    width: 100%;
+    height: 500px;
+}
+
+#local {
+    background: #f3f3f3;
+    padding-bottom: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 50%;
+    margin-left: 100px;
+    padding-top: 150px;
+}
+
+/* ==== SECCION EQUIPO CORDOBA === */
+
+#datos-local div {
+    padding: 0 20px 0 0;
+    height: 48px;
+}
+
+#datos-local div:not(:last-child) {
+    border-right: 2px solid #3f3f3f;
+}
+
+#datos-local div:not(:first-child){
+    padding-left:20px;
+}
+
+#datos-local p {
+    margin: 0;
+}
+
+
+/* ==== FONDO CONTACTOS === */
+
+#bg-contacto {
+    position: relative;
+    top: -130px;
+}
+
+#seccion-contacto {
+    background-color: #0099ff;
+    min-height: 500px;
+    position: relative;
+}
+
+
+/* === CONTACTOS FORMULARIO === */
+
+#contenedor-formulario {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fbfafa;
+    border-radius: 5px;
+    max-width: 500px;
+}
+
+#titulo-formulario {
+    color: #3f3f3f;
+}
+
+/* === FOOTER === */
+
+footer {
+    background: #004675;
+    min-height: 100px;
+}
+
+footer p {
+    color: #f3f3f3;
+    text-align: center;
+}
+
+#iconos i{
+    font-size: 26px;
+    padding: 0 8px;
+    color: #f3f3f3;
+}
+
+
+/*======= MEDIA QUERIES PANTALLA ANCHA =======*/
+
+@media(max-width:1200px) {
+    #local {
+        flex-wrap: wrap;
+        padding-top: 30px;
+    }
+
+    .wrapper {
+        width: 90%;
+        margin: auto;
+        padding-top: 50px;
+    }
+}
+
+
+/*========= MEDIA QUERIES PANTALLA CHICA =========*/
+
+@media (max-width: 768px) {
+    #equipo {
+        width: 90% !important;
+    }
+
+    #intro {
+        display: none;
+    }
+    
+    #equipo p {
+        display: none;
+    }
+
+    #bg-contacto {
+        top: -110px;
+    }
+}
