@@ -78,7 +78,7 @@ function iniciar(){
         alert('El correo electrónico NO es válido.');
     }
     else{
-        if (pass === null){
+        if (pass == null){
             alert('Ingrese su contraseña');
         }
     }
@@ -91,7 +91,7 @@ var password = document.getElementById('password');usuario
 
 function registrar(){
     alert('¡Gracias por Registrarse! Enviamos un mail de verificación.');
-    if(nombre === ''){
+    if(nombre == ''){
         alert('No escribiste nada Fiera')
     }
 }
