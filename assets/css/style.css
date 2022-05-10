@@ -17,11 +17,25 @@ body{
     overflow-x: hidden;
 }
 
+/* === HEADER === */
+h3 {
+    opacity: 0.4;
+}
+
 /* ===== MENU === */
 #menu li > a {
     font-size: 18px;
     font-weight: bold;
     color: #3f3f3f;
+    text-decoration: none;
+}
+
+#menu li > a:hover {
+    background-color: #0099ff;
+    color: #f3f3f3;
+    -moz-transition: .4s linear;
+    -webkit-transition: .4s ease-out;
+    transition: .4s linear;
 }
 
 #menu form > button {
