@@ -1,0 +1,4 @@
+carpeta src
+
+recursos de imágenes creadas con herramientas de dibujo vectorial
+recursos de imágenes creadas con herramientas de edición de imágenes digitales
